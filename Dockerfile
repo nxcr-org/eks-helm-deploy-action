@@ -1,7 +1,5 @@
 FROM python:3.8-slim-buster
 
-user root
-
 # Install the toolset.
 RUN apt -y update && apt -y install curl \
     && pip install awscli \
