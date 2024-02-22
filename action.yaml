@@ -67,8 +67,8 @@ inputs:
         description: 'The version number of the chart.'
         required: false
 runs:
-    using: 'docker'
-    image: 'Dockerfile'
+    using: docker
+    image: Dockerfile
     env:
         AWS_REGION: ${{ inputs.aws-region }}
         AWS_SECRET_ACCESS_KEY: ${{ inputs.aws-secret-access-key }}
