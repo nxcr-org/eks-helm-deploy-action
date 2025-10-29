@@ -2,7 +2,7 @@ FROM public.ecr.aws/docker/library/python:3.12.0-slim-bullseye
 
 # Install the toolset.
 RUN apt -y update && apt -y install curl git \
-    && sudo apt-get install curl gpg apt-transport-https --yes \
+    && apt-get install curl gpg apt-transport-https --yes \
     && curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 \
     && chmod +x get_helm.sh && ./get_helm.sh \
     && pip install awscli \
