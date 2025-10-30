@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+aws --version
+
 # Login to Kubernetes Cluster.
 if [ -n "$CLUSTER_ROLE_ARN" ]; then
     aws eks \
