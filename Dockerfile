@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/python:3.12.0-slim-bullseye
+FROM public.ecr.aws/docker/library/python:3.12.0-bookworm
 
 # Install the toolset.
 RUN apt -y update && apt -y install curl tar git unzip gpg apt-transport-https --yes \
